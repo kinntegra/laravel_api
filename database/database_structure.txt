@@ -1,0 +1,5 @@
+-- master -f
+    -- addresstypes -t -model=Addresstype
+    -- countries -t -model=Country
+    -- states -t -model=State
+    -- holidays -t -model=Holiday

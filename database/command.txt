@@ -1,0 +1,12 @@
+php artisan migrate:fresh
+php artisan migrate --path=/database/migrations/master
+php artisan migrate --path=/database/migrations/associate
+php artisan migrate --path=/database/migrations/calender
+php artisan migrate --path=/database/migrations/client
+php artisan db:seed
+php artisan db:seed --class=UserSeeder
+php artisan db:seed --class=EmployeeSeeder
+
+php artisan passport:install --force
+php artisan passport:client
+php artisan passport:client --password
